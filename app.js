@@ -20,7 +20,6 @@ const reviewRoutes = require('./routes/reviews');
 const MongoDBStore = require("connect-mongo")(session);
 
 const dbUrl = process.env.DB_URL || 'mongodb+srv://abcdef:05gOU0FCROsI6I60@book.0varj6g.mongodb.net/restaurants?retryWrites=true&w=majority';
-
 mongoose
     .connect(dbUrl)
     .then(() => {
@@ -111,13 +110,8 @@ app.use(
     })
 );
 
-
 app.use(passport.initialize());
 app.use(passport.session());
-// passport.use(new LocalStrategy(User.authenticate()));
-
-// passport.serializeUser(User.serializeUser());
-// passport.deserializeUser(User.deserializeUser());
 
 app.use((req, res, next) => {
     res.locals.currentUser = req.user;

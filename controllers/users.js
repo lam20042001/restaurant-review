@@ -6,7 +6,7 @@ module.exports.renderRegister = (req, res) => {
 
 
 module.exports.postRegister = passport.authenticate('local-signup', {
-    successRedirect: '/login',
+    successRedirect: '/restaurants',
     failureRedirect: '/register',
     failureFlash: false
 });

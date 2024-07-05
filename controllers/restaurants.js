@@ -33,7 +33,6 @@ module.exports.showRestaurant = async (req, res,) => {
         req.flash('error', 'Cannot find that restaurant!');
         return res.redirect('/restaurants');
     }
-    console.log(restaurant)
     res.render('restaurants/show', { restaurant });
 }
 
