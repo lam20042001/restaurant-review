@@ -1,5 +1,11 @@
 # Restaurant Review Web App
 
+## Deployed Website
+
+You can access the deployed website at the following link:
+
+https://restaurant-review-xcdt.onrender.com
+
 ## Overview
 
 This web application allows users to discover, review, and rate restaurants. Users can create, edit, and delete their own restaurant listings, and other users can review and rate restaurants on a scale of 1 to 5 stars.
